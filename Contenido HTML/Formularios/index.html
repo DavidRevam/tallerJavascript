@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomularios</title>
+</head>
+<body>
+    <main>
+        <h1>Formularios</h1>
+        <section>
+            <!-- Etiqueta para formularios FORM -->
+            <!-- 2 atributos... action(Trabajando con PHP etc...) o method(PHP... 2 metodos)-->
+            <form action="" method="get">  <!-- Metodo Get o Post (Trabajar cuando se usa PHP)-->
+                                        <!-- Limitado Muestra y manda la info del formuario en barra de direcciones -->
+                                        <!-- Sin limite manda info pero no la muestra -->
+                <label for="nombre"> Nombre:</label>
+                <input type="text" id="nombre" name="name2" value="" placeholder="Juan" minlength="3" maxlength="33" required title="Error desconocide" autofocus spellcheck="true" autocomplete="off" tabindex="1">
+
+                <label for="edad">Edad: </label>
+                <input type="number" name="edad" id="edad" min="18" max="90" required tabindex="2"><br>
+
+                <label for="password">Contraseña: </label>
+                <input type="password" name="pass" id="pass" required><br><hr>
+
+                <label for="fecha">Fecha: </label>
+                <input type="date" name="fecha" id="fecha">
+
+                <label for="color">Color: </label>
+                <input type="color" name="color" id="color">
+
+                <!--Enlazar con un datalist UNA LISTA DE OPC-->
+                <datalist id="meses">
+                    <option value="Enero"></option>
+                    <option value="Febrero"></option>
+                    <option value="Marzo"></option>
+                </datalist>
+                <label for="mes">Meses: </label>
+                <input type="month" name="mes" id="mes" list="meses">
+                <!--ACABO-->
+
+                <fieldset> 
+                    <legend>Estado Civil:</legend>
+                    <input type="radio" name="estado" id="estado" value="Soltero">Soltero
+                    <input type="radio" name="estado" id="estado" value="Casado">Casado
+                    <input type="radio" name="estado" id="esatdo" value="Viudo">Viudo
+                </fieldset>
+
+                <br>
+                <label for="condiciones">Aceptar Teminos y Condiciones</label>
+                <input type="checkbox" name="Terminos" id="Terminos">
+                <br>
+
+                <hr>
+                <label for="lenguajes">Lenguajes de Programación</label>
+                <select name="lenguajes" id="lenguajes">
+                    <optgroup label="Backend">
+                        <option value="java">Java</option>
+                        <option value="php">PHP</option>
+                        <option value="phyton">Phyton</option>
+                    </optgroup>
+                    <optgroup label="Frondend">
+                        <option value="javascript">JS</option>
+                        <option value="ps">PyScript</option>
+                    </optgroup>
+                </select>
+
+                <input type="button" value="enviar">
+                <input type="submit" value="Enviando">
+                <button type="button">Guardar</button>
+                <button type="reset">Borrar</button>
+
+                
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>

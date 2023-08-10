@@ -1,0 +1,68 @@
+/* 
+Selectores principales: 
+1. Por etiqueta <h1> <main>
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/* Acomoda tamaño de la caja segun su tamaño... acomoda el tamaño y no suma otras cosas % */
+}
+
+
+h1{
+    background-color: black;
+    text-align: center;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    color: aliceblue;
+}
+
+/*
+2. Por id
+*/
+
+#seccion1{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 18px;
+    background-color: burlywood;
+    color: chocolate;
+}
+
+main{
+    width: 100%;
+    padding-bottom: 3%;
+}
+
+h2{
+    text-align: center;
+    font-size: 32px;
+}
+
+/*
+3. seleccion por clase
+*/
+
+.seccion2{
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    background-color: dodgerblue;
+    margin-bottom: 2%;
+    padding: 5%;
+}
+
+/*
+4. Seleccion por agrupación
+*/
+
+.div1, .div2, .div3{
+    width: 33%;
+    background-color: blueviolet;
+    border: 2px solid black;
+    padding: 2%;
+    display: inline-block;
+}
